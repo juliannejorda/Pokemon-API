@@ -19,6 +19,7 @@ h1 {
     place-items: center;
     margin-top: 3.8em;
     font-family: 'Signika', sans-serif;
+    background-color: darkcyan;
   }
   body .card {
     position: relative;

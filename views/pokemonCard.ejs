@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Signika:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="card">
+        <% let image = "fire" %>
+      <div class="inner-card"  style="background-image: url(/images/<%=image%>.png);">
+        <div class="title">
+          <h3 class=pokemonName><%= pokemonName %></h3>
+          <h4 class="hp"><%= hp %> HP</h5>
+        </div>
+        <div class="main-pokemon"> <img class="main-img" src="<%= pokemonImage %>" alt="Pokemon Main" width="220px" height="auto"/> </div>
+        <div class="banner">
+          <p><span class=type><%= types.join(", ")%> </span>Pokemon.</p>
+            <p>Height: <%= height %> decimetres </p>
+         <p>Weight: <%= weight %> hectograms</p>
+        </div>
+        <div class="main-text">
+         <h3 class="subheading">Moves:</h3>
+         <ul>
+            <% moves.forEach(function (move) { %>
+                <i class="fa-li fa fa-square"></i><li class="points"><%= move %> </li>   
+            <% }) %>
+        </ul>
+        </div>
+        <hr class="second-hr"/>
+        <div class="main-text">
+        
+         <h3 class="subheading">Abilities:</h3>
+         <ul class="fa-ul">
+            <% abilities.forEach(function (ability) { %>
+                <i class="fa-li fa fa-square"></i><li class="points"><%= ability %> </li>   
+            <% }) %>
+        </ul>
+        
+    </div>
+        <div class="tiny-txt">
+          <P>©1995 Nintendo gamefreak ©1999 Wizards. 07/102</P>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,208 @@
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+h1 {
+    color: red;
+}
+/* .inner-card {
+    content: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3c938f85-f834-4bb3-b3b2-97d295769464/d637xau-5852a726-5ca8-44f4-9cbf-684b12b823b9.png);
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+    display: grid;
+    place-items: center;
+    margin-top: 3.8em;
+    font-family: 'Signika', sans-serif;
+  }
+  body .card {
+    position: relative;
+    width: 356.25px;
+    height: 550px;
+    background: #F0D935;
+    border: 0.1px solid lightgrey;
+    border-radius: 15px;
+    box-shadow: 1px 4px 10px 4px lightgrey;
+    transition: ease all 1s;
+  }
+  body .card:hover {
+    transform: scale(1.2);
+  }
+  body .card .inner-card {
+    position: relative;
+    /* background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/3c938f85-f834-4bb3-b3b2-97d295769464/d637xau-5852a726-5ca8-44f4-9cbf-684b12b823b9.png); */
+    margin: 1em;
+    height: 92%;
+  }
+  body .card .inner-card .base-info {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 0.5em;
+    justify-content: space-between;
+    padding: 0.4em;
+    margin-left: 5.5em;
+    padding-right: 1em;
+  }
+  body .card .inner-card .first-hr {
+    height: 0.1px;
+    /* border: 0.5px solid yellow; */
+    width: 80%;
+    margin-left: 2.8em;
+    margin-top: -2px;
+    color: yellow;
+  }
+  body .card .inner-card .title {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    padding-right: 1em;
+    padding-top: 0.75em;
+    margin-bottom: 0.3rem;
+  }
+  body .card .inner-card .title .hp {
+    color: red;
+  }
+  body .card .inner-card .stage-text {
+    position: absolute;
+    z-index: 1;
+    top: 14px;
+    left: 11px;
+    text-transform: uppercase;
+    font-size: 0.5em;
+  }
+  body .card .inner-card .stage-img {
+    background: lightgrey;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    border: 1px solid yellow;
+  }
+  body .card .inner-card .main-img {
+    display: block;
+    margin: auto;
+    border: 5px solid yellow;
+    box-shadow: 2px 4px 10px -2px;
+  }
+
+  body .card .inner-card .banner {
+    background: radial-gradient(white 1%, #D5BA4E 90%);
+    width: 85%;
+    font-size: 0.6em;
+    margin-top: 0.5em;
+    margin-left: 2.2em;
+    text-align: center;
+  }
+  .banner {
+      height: auto;
+      padding-top: 1.5%;
+      padding-bottom: 1.5%;
+  }
+  body .card .inner-card .main-text {
+    font-size: 0.6em;
+    padding: 0.2em 2.4em;
+  }
+  body .card .inner-card .main-text span {
+    color: #79578D;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  body .card .inner-card .second-hr {
+    width: 94%;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  body .card .inner-card .stats {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  body .card .inner-card .stats .fire-grid {
+    display: grid;
+    grid-template-columns: 18px 18px;
+    grid-template-rows: 18px 18px;
+    place-items: center;
+    margin-left: 0.5em;
+    margin-top: 0.1em;
+  }
+  body .card .inner-card .stats p span {
+    font-weight: bolder;
+    font-size: 1.2em;
+  }
+  body .card .inner-card .stats .stats-main {
+    font-size: 0.7em;
+    margin-left: 0.4em;
+  }
+  body .card .inner-card .stats .stats-num {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0.4em;
+    padding-right: 0.5em;
+  }
+  body .card .ratings {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  body .card .ratings .container {
+    display: flex;
+    flex-flow: column;
+  }
+  body .card .ratings .container p {
+    font-weight: 2000;
+  }
+  body .card .ratings .container .weakness, body .card .ratings .container .resistance, body .card .ratings .container .retreat {
+    display: flex;
+    justify-content: center;
+  }
+  body .card .ratings .container .weakness img, body .card .ratings .container .resistance img, body .card .ratings .container .retreat img {
+    margin: 0 0.4em 0.2em 0;
+  }
+  body .card .bottom-info {
+    font-size: 0.6em;
+    padding: 0 1em;
+    border: 0.8px solid yellow;
+    margin: 0.2em 1em;
+  }
+  body .card .tiny-txt {
+    padding: 0 2.2em;
+    font-size: 0.6em;
+  }
+  
+  .pokemonName {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .type {
+      color: darkblue;
+      text-transform: capitalize;
+  }
+
+  .tiny-txt {
+      position: absolute;
+      bottom: 0;
+  }
+
+  .main-text {
+      margin: 2%;
+  }
+
+  .subheading {
+      color: #CC0000;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-shadow: 1px 1px 2px #FFFF;
+  }
+
+  .points {
+      color: #2C2827;
+      font-size: 1.2em;
+      text-decoration: none;
+  }
+

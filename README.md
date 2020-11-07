@@ -1,4 +1,4 @@
-# Pokemon-API
+# Pokemon Card
 View the demo [here](https://protected-fjord-24996.herokuapp.com/)
 
 ## Public Api Used:

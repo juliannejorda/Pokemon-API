@@ -53,7 +53,7 @@ app.post("/", function(req, res){
     res.redirect("/pokemonCard");
     })
     .catch(function (error) {
-        res.write("<p>please try again</p>");
+        res.write("<h1>please try again</h1>");
     });
 
 })
@@ -69,6 +69,10 @@ app.get("/pokemonCard", function (req, res){
         moves: moves,
         hp: hp
     })
+})
+
+app.post("/pokemonCard", function(req,res) {
+    res.redirect("/");
 })
 
 app.listen(process.env.PORT || 3000, function () {

@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+    margin: auto;
+    
+}
+
+.body {
+    background-image: url(https://i.pinimg.com/originals/1d/c2/18/1dc218916a0607677ad59fde4508ecb2.jpg);
+    background-size: 100%;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+
+
+.mb-3 {
+    width: 50%;
+
+}
